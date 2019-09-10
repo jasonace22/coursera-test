@@ -149,7 +149,6 @@ div.relative {
   width: 400px;
   height: 200px;
   border: 1px solid #000000;
-  overflow-y: scroll;
 } 
 
 div.relative2 {
@@ -159,7 +158,6 @@ div.relative2 {
   height: 200px;
   border: 1px solid #000000;
    padding: 10px;
-  overflow-y: scroll;
 }
 
 div.absolute {
@@ -171,13 +169,11 @@ div.absolute {
   border: 1px solid #000000;
    
 }
-
-div.spacing {
-  top: 0px;
-  right: 0;
-  padding: 25px;
+ 
+div:hover {
+  overflow-y: scroll;
 }
-
+  
 h1	{
 color: black;
 font-family: arial, sans-serif;
@@ -343,7 +339,6 @@ div.relative {
   height: 200px;
   border: 1px solid #000000;
    padding: 10px;
-  overflow-y: scroll;
 } 
 
 div.relative2 {
@@ -353,7 +348,6 @@ div.relative2 {
   height: 200px;
   border: 1px solid #000000;
    padding: 10px;
-  overflow-y: scroll;
 } 
 
 div.absolute {
@@ -366,10 +360,8 @@ div.absolute {
    
 }
 
-div.spacing {
-  top: 0px;
-  right: 0;
-  padding: 25px;
+div:hover {
+  overflow-y: scroll;
 }
 
 h1	{
@@ -534,7 +526,6 @@ div.relative {
   width: 100%;
   height: 200px;
   border: 1px solid #000000;
-  overflow-y: scroll;
 } 
 
 div.relative2 {
@@ -544,7 +535,6 @@ div.relative2 {
   height: 200px;
   border: 1px solid #000000;
    padding: 10px;
-  overflow-y: scroll;
 }
  
 
@@ -557,10 +547,8 @@ div.absolute {
   border: 1px solid #000000;
 }
 
-div.spacing {
-  top: 0px;
-  right: 0;
-  padding: 25px;
+div:hover {
+  overflow-y: scroll;
 }
 
 h2	{
