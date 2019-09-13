@@ -146,7 +146,7 @@
 div.relative {
   position: relative;
   background-color: grey;
-  width: 33%;
+  width: 30%;
   height: 200px;
   border: 1px solid #000000;
 } 
@@ -154,7 +154,7 @@ div.relative {
 div.relative2 {
   position: relative;
   background-color: grey;
-  width: 33%;
+  width: 30%;
   height: 200px;
   border: 1px solid #000000;
    padding: 10px;
@@ -170,8 +170,14 @@ div.absolute {
    
 }
  
-div:hover {
+div.relative:hover {
   overflow-y: scroll;
+  
+}
+
+div.relative2:hover {
+  overflow-y: scroll;
+
 }
   
 h1	{
@@ -360,8 +366,14 @@ div.absolute {
    
 }
 
-div:hover {
+div.relative:hover {
   overflow-y: scroll;
+  
+}
+
+div.relative2:hover {
+  overflow-y: scroll;
+
 }
 
 h1	{
@@ -547,8 +559,14 @@ div.absolute {
   border: 1px solid #000000;
 }
 
-div:hover {
+div.relative:hover {
   overflow-y: scroll;
+  
+}
+
+div.relative2:hover {
+  overflow-y: scroll;
+
 }
 
 h2	{
