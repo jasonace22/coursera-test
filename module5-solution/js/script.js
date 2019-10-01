@@ -371,7 +371,8 @@ function buildAboutViewHtml(categories,
       html2 =
       insertProperty(html2, "star4", "fa fa-star-o");
       html2 =
-      insertProperty(html2, "star5", "fa fa-star-o");}
+      insertProperty(html2, "star5", "fa fa-star-o");
+      html2 +="<center>1-Star Rating</center>";}
       
       if (x==2){
       html2 =
@@ -383,7 +384,8 @@ function buildAboutViewHtml(categories,
       html2 =
       insertProperty(html2, "star4", "fa fa-star-o");
       html2 =
-      insertProperty(html2, "star5", "fa fa-star-o");}
+      insertProperty(html2, "star5", "fa fa-star-o");
+      html2 +="<center>2-Star Rating</center>";}
 
       if (x==3){
       html2 =
@@ -395,7 +397,8 @@ function buildAboutViewHtml(categories,
       html2 =
       insertProperty(html2, "star4", "fa fa-star-o");
       html2 =
-      insertProperty(html2, "star5", "fa fa-star-o");}
+      insertProperty(html2, "star5", "fa fa-star-o");
+      html2 +="<center>3-Star Rating</center>";}
 
       if (x==4){
       html2 =
@@ -407,7 +410,8 @@ function buildAboutViewHtml(categories,
       html2 =
       insertProperty(html2, "star4", "fa fa-star");
       html2 =
-      insertProperty(html2, "star5", "fa fa-star-o");}
+      insertProperty(html2, "star5", "fa fa-star-o");
+      html2 +="<center>4-Star Rating</center>";}
 
       if (x==5){
       html2 =
@@ -419,7 +423,8 @@ function buildAboutViewHtml(categories,
       html2 =
       insertProperty(html2, "star4", "fa fa-star");
       html2 =
-      insertProperty(html2, "star5", "fa fa-star");}
+      insertProperty(html2, "star5", "fa fa-star");
+      html2 +="<center>5-Star Rating</center>";}
 
     finalHtml += html2;
   finalHtml += "</section>";
