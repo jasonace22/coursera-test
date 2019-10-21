@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ShoppingListCheckOff">
+<head>
+<title>Shopping List Check Off</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script src="app.js"></script>
+<style>
+      .emptyMessage {
+        font-weight: bold;
+        color: red;
+        font-size: 1.2em;
+      }
+      li {
+        margin-bottom: 7px;
+        font-size: 1.2em;
+      }
+      li > button {
+        margin-left: 6px;
+      }
+      button > span {
+        color: green;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Shopping List Check Off</h1>
+
+  <div class="row">
+
+    <!-- To Buy List -->
+    <div class="col-md-6" ng-controller="ToBuyController as ToBuyCt">
+     <h2>To Buy:</h2>
+     <ul>
+       <li ng-repeat="buy in ToBuyCt.tobuy">Buy {{buy.quantity}} {{buy.name}}<a>&nbsp;&nbsp;</a><input type="number" ng-model="num1" ng-init="num1=buy.quantity" style="width:20%" size="1" /><button class="btn btn-default" ng-click="ToBuyCt.insertToBuy(buy.name, num1, buy.pricePerItem, $index)"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+     </ul>
+     <div class="emptyMessage" ng-if="ToBuyCt.tobuy.length == 0">Everything is bought!</div>
+    </div>
+
+    <!-- Already Bought List -->
+    <div class="col-md-6" ng-controller="AlreadyBoughtController as BoughtCt">
+     <h2>Already Bought:</h2>
+     <ul>
+       <li ng-repeat="boughtitem in BoughtCt.bought" id="demo">Bought {{boughtitem.quantity}} {{boughtitem.name}} for total price of $$${{boughtitem.quantity * boughtitem.pricePerItem}}</li>
+     </ul>
+     <div class="emptyMessage" ng-if="BoughtCt.bought.length == 0">Nothing bought yet.</div>
+    </div>
+  </div>
+</div>
+<script></script>
+</body>
