@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app='MenuApp'>
+  <head>
+    <title>Narrow Down Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+  </head>
+<body>
+
+    <!--CHANGE -->
+   <div class="container">
+        <div class="row">
+            <div class="col-sm-18">
+                <ui-view></ui-view>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="menuapp.module.js"></script>
+    <script type="text/javascript" src="data.module.js"></script>
+    <script type="text/javascript" src="menuapp-categories.controller.js"></script>
+    <script type="text/javascript" src="menuapp-items.controller.js"></script>
+    <script type="text/javascript" src="menudata.service.js"></script>
+    <script type="text/javascript" src="routes.js"></script>
+    <script type="text/javascript" src="categories.component.js"></script>
+    <script type="text/javascript" src="items.component.js"></script>
+  </div>
+</body>
+</html>
