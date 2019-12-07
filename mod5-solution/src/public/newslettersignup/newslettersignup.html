@@ -1,0 +1,52 @@
+<div>
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <!-- Lecture 42. Part 1 -->
+            <form class="form-horizontal" name="myForm" novalidate>
+                <div>
+                     <th>firstname</th>
+                    <input type="text" class="form-control" name="firstname"  placeholder="firstname" id="firstname" ng-model="newslettersignupCtrl.newslettersignup.firstname" required>
+                    <span style="color:red;" ng-if="myForm.firstname.$error.required && myForm.firstname.$touched">firstname is required</span>
+                </div>
+                <div>
+                    <th>lastname</th>
+                    <input type="text" class="form-control" name="lastname" placeholder="lastname" id="lastname" ng-model="newslettersignupCtrl.newslettersignup.lastname" required>
+                    <span style="color:red;" ng-if="myForm.lastname.$error.required && myForm.lastname.$touched">lastname is required</span>
+                </div>
+                <div>
+                    <th>email</th>
+                    <input type="email" class="form-control" name="email" placeholder="email" id="email" ng-model="newslettersignupCtrl.newslettersignup.email" required>
+                    <span><!-- Lecture 42. Part 2 -->
+                    <span style="color:red;" ng-if="myForm.email.$invalid && myForm.email.$touched">email required</span>
+                    <span style="color:red;" ng-if="myForm.email.$error.required && myForm.email.$touched">email required</span>
+                    </span>
+                </div>
+                <div>
+                    <th>phonenumber</th>
+                    <input type="number" class="form-control" name="phonenumber" placeholder="###-###-#####" id="phonenumber" ng-model="newslettersignupCtrl.newslettersignup.phonenumber" required>
+                    <span style="color:red;" ng-if="myForm.phonenumber.$error.required && myForm.phonenumber.$touched">phonenumber required</span>
+                </div>
+                <div>
+                    <th>menu#</th>
+                    <input type="text" class="form-control" name="menunumber" id="menunumber" ng-model="newslettersignupCtrl.newslettersignup.menunumber" required>
+                    <span style="color:red;"><!-- Lecture 42. Part 2 -->
+                    <span ng-if="myForm.$submitted && newslettersignupCtrl.found === false">no such menu number exists</span>
+                    <span ng-if="(myForm.menunumber.$value !== L1) && myForm.menunumber.$touched">Yes!!</span>
+                    <span ng-if="myForm.menunumber.$error.required && myForm.menunumber.$touched">menunumber required</span>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- Lecture 42. Part 1 -->
+                            <br><button type="submit" style="background-color:black;color:white;" ng-click="newslettersignupCtrl.signin()" ng-disabled="myForm.$invalid">Sign in</button>
+                        </div>
+                        <div class="col-md-9">
+                            <p ng-if="myForm.$submitted && newslettersignupCtrl.found && myForm.$valid">Your information has been saved</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
